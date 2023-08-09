@@ -1,0 +1,8 @@
+<div>
+    <app-login *ngIf="status"></app-login>
+    <app-register *ngIf="!status"></app-register>
+</div>
+<p *ngIf="!status">don't have an account yet ? <a (click)="onLogin()">sign in</a></p>
+<p *ngIf="status">don't have an account yet ? <a (click)="onRegister()">sign up</a></p>
+
+
