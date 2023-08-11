@@ -1,15 +1,4 @@
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
-})
-export class LoginComponent {
-
-  
-
-  // constructor(
+// constructor(
   //   public dialog: MatDialog,
   //   public _router: Router,
   //   private _coreService: CoreService
@@ -68,4 +57,3 @@ export class LoginComponent {
   //     }
   //   );
   // }
-}

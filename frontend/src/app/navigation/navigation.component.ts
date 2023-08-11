@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogLoginAndRegisterComponent } from '../dialog-login-and-register/dialog-login-and-register.component';
+import { DialogSigninAndSignupComponent } from '../dialog-signin-and-signup/dialog-signin-and-signup.component';
 
 @Component({
   selector: 'app-navigation',
@@ -14,15 +14,9 @@ export class NavigationComponent {
   ) { }
 
   onDialogLogin() {
-      const dialogRef = this.dialog.open(DialogLoginAndRegisterComponent, {
+      const dialogRef = this.dialog.open(DialogSigninAndSignupComponent, {
         width: '400px',
-        // position: {
-        //   top: '0px',
-        //   left: '750px'
-        // }
+        height: '500px'
       });
-      // dialogRef.afterClosed().subscribe(result => {
-      //   this.reloadCurrentPage();
-      // });
-    }
+  }
 }
