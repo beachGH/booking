@@ -7,9 +7,11 @@ import lombok.Data;
 public class CustomerModel {
     private String id;
 
+    private String email;
+
     private String password;
 
-    private String email;
+    private String name;
 
     private String phone;
 }

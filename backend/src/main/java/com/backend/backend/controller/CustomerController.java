@@ -19,7 +19,7 @@ import com.backend.backend.service.CustomerService;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/v1/customer")
+@RequestMapping("/api/v1/customer")
 @RequiredArgsConstructor
 
 public class CustomerController {

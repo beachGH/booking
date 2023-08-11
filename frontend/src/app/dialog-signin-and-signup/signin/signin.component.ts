@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-signin',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./signin.component.scss']
 })
 export class SigninComponent {
+
+  @Input()
+  status!: Boolean
+
+  onRegister() {
+    this.status = false
+    console.log(this.status)
+  }
   
 }

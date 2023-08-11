@@ -1,7 +1,7 @@
 <!-- <div> -->
-    <app-signin *ngIf="status"></app-signin>
-    <app-signup *ngIf="!status"></app-signup>
+    <app-signin [status]="status"  *ngIf="status"></app-signin>
+    <app-signup [status]="status"  *ngIf="!status"></app-signup>
 <!-- </div> -->
-<p *ngIf="!status">don't have an account yet ? <a (click)="onLogin()">Sign in</a></p>
-<p *ngIf="status">Not a member ? <a (click)="onRegister()">Sign up</a></p>
+<!-- <p *ngIf="!status">don't have an account yet ? <a (click)="onLogin()">Sign in</a></p>
+<p *ngIf="status">Not a member ? <a (click)="onRegister()">Sign up</a></p> -->
 

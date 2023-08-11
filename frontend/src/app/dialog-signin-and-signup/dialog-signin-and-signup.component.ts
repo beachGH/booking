@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-dialog-signin-and-signup',
@@ -6,13 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./dialog-signin-and-signup.component.scss']
 })
 export class DialogSigninAndSignupComponent {
+
+  
   status = true;
+  // @Output()
+  // status = new EventEmitter<boolean>();
 
-  onRegister() {
-    this.status = false;
-  }
+   @Output()
+  statuss = new EventEmitter<boolean>();
+  // onRegister() {
+  //   this.status = false;
+  // }
 
-  onLogin() {
-    this.status = true;
-  }
+  // onLogin() {
+  //   this.status = true;
+  // }
 }

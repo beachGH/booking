@@ -1,16 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs/operators';
+import { throwError } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CoreService {
 
+  private apiUrl = 'http://localhost:8050/api/v1';
+
   constructor(private httpClient: HttpClient) { }
 
   getAll() {
-    return this.httpClient.get("url").pipe(
+    return this.httpClient.get(this.apiUrl + "/customer").pipe(
       map((res: any) => {
         return res;
       }),
@@ -32,7 +35,7 @@ export class CoreService {
   }
 
   save(entity: any) {
-    return this.httpClient.post("/getAll", entity).pipe(
+    return this.httpClient.post(this.apiUrl + "/customer", entity).pipe(
       map((res: any) => {
         return res;
       }),
@@ -41,6 +44,4 @@ export class CoreService {
       })
     );
   }
-
-  
 }

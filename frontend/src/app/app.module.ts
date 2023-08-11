@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DialogSigninAndSignupComponent } from './dialog-signin-and-signup/dialog-signin-and-signup.component';
 import { SigninComponent } from './dialog-signin-and-signup/signin/signin.component';
 import { SignupComponent } from './dialog-signin-and-signup/signup/signup.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SignupComponent } from './dialog-signin-and-signup/signup/signup.compon
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

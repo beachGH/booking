@@ -1,31 +1,29 @@
 <body>
     <div class="center">
         <h1>Create Account</h1>
-        <form>
+        <form #form [formGroup]="signupForm">
             <div class="txt_field">
-                <input type="email" id="email" required>
+                <input type="email" formControlName="email" name="email" id="email">
                 <span></span>
                 <label>Email</label>
             </div>
             <div class="txt_field">
-                <input type="password" id="password" required>
+                <input type="password" formControlName="password" name="password" id="password">
                 <span></span>
                 <label>Password</label>
             </div>
             <div class="txt_field">
-                <input type="text" id="name" required>
+                <input type="text" formControlName="name" name="name" id="name">
                 <span></span>
                 <label>Full Name</label>
             </div>
             <div class="txt_field">
-                <input type="text" id="phone" required>
+                <input type="text" formControlName="phone" name="phone" id="phone">
                 <span></span>
                 <label>Phone</label>
             </div>
+            <button type="submit" (click)="createSignup()">SIGN UP</button>
             <input type="submit" value="SIGN UP">
-            <!-- <div class="signup_link">
-                Not a member? <a>Signup</a>
-            </div> -->
         </form>
     </div>
 </body>
