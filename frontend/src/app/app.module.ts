@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -14,6 +13,11 @@ import { DialogSigninAndSignupComponent } from './dialog-signin-and-signup/dialo
 import { SigninComponent } from './dialog-signin-and-signup/signin/signin.component';
 import { SignupComponent } from './dialog-signin-and-signup/signup/signup.component';
 import { ToastrModule } from 'ngx-toastr';
+import { FilePickerModule } from 'ngx-awesome-uploader';
+import { NgImageSliderModule } from 'ng-image-slider';
+import { DialogLoginAndRegisterComponent } from './dialog-login-and-register/dialog-login-and-register.component';
+import { LoginComponent } from './dialog-login-and-register/login/login.component';
+import { RegisterComponent } from './dialog-login-and-register/register/register.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,9 @@ import { ToastrModule } from 'ngx-toastr';
     DialogSigninAndSignupComponent,
     SigninComponent,
     SignupComponent,
+    DialogLoginAndRegisterComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +41,8 @@ import { ToastrModule } from 'ngx-toastr';
     FormsModule,
     ReactiveFormsModule,
     ToastrModule.forRoot(),
+    FilePickerModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

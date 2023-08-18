@@ -1,5 +1,17 @@
 <body>
-    <div class="center">
+    <div class="left">
+        <h1>img</h1>
+        <div class="showImage">
+            <div class="mb-3 abc">
+                <img [src]="url" height="200px"> <br />
+            </div>
+            <div class="mb-3">
+                <input class="form-control form-control-sm" id="formFileSm" type="file" (change)="onSelectFile($event)">
+              </div>
+            
+        </div>
+    </div>
+    <div class="right">
         <h1>Create Account</h1>
         <form #form [formGroup]="signupForm">
             <div class="txt_field">
@@ -22,8 +34,11 @@
                 <span></span>
                 <label>Phone</label>
             </div>
-            <button type="submit" (click)="createSignup()">SIGN UP</button>
-            <input type="submit" value="SIGN UP">
+            <!-- <button class="btn" type="submit" (click)="createSignup()">CREATE ACCOUNT</button> -->
+            <button type="submit" class="btn btn-purple btn-lg btn-block" (click)="createSignup()">CREATE ACCOUNT</button>
+            <div class="signup_link">
+                Already have a account? <a (click)="addNewItem2()">Login</a>
+            </div>
         </form>
     </div>
 </body>

@@ -160,7 +160,7 @@
     symbol-observable "4.0.0"
     yargs "17.7.2"
 
-"@angular/common@^16.0.0 || ^17.0.0", "@angular/common@^16.1.0", "@angular/common@>=16.0.0-0", "@angular/common@16.1.8":
+"@angular/common@^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0 || ^14.0 || ^15.0 || ^16.0", "@angular/common@^15.0.4", "@angular/common@^16.0.0 || ^17.0.0", "@angular/common@^16.1.0", "@angular/common@>=16.0.0-0", "@angular/common@16.1.8":
   version "16.1.8"
   resolved "https://registry.npmjs.org/@angular/common/-/common-16.1.8.tgz"
   integrity sha512-Zm+Ysxdf74VwG3mbAqs2v1QFUR+h9RyJBXF5VFABEpgFw7NUOBKrayjJmKjgZ0TBAmL2+nXehJgcPph3zNp3sg==
@@ -188,7 +188,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^16.0.0 || ^17.0.0", "@angular/core@^16.1.0", "@angular/core@>=16.0.0-0", "@angular/core@16.1.8":
+"@angular/core@^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0 || ^14.0 || ^15.0 || ^16.0", "@angular/core@^15.0.4", "@angular/core@^16.0.0 || ^17.0.0", "@angular/core@^16.1.0", "@angular/core@>=16.0.0-0", "@angular/core@16.1.8":
   version "16.1.8"
   resolved "https://registry.npmjs.org/@angular/core/-/core-16.1.8.tgz"
   integrity sha512-XtOpY9HA85hPGrPwe1rgE8NJ3bFWbuJFx4SUlzB66k9B5jo8bD2Dxl/0id55RFS5gmvCe/Qhh0zoGyMpkWjMHA==
@@ -4998,6 +4998,11 @@ mkdirp@^1.0.3:
   resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
+mrmime@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/mrmime/-/mrmime-1.0.0.tgz"
+  integrity sha512-a70zx7zFfVO7XpnQ2IX1Myh9yY4UYvfld/dikWRnsXxbyvMcfz+u6UfgNAtH+k2QqtJuzVpv6eLTx1G2+WKZbQ==
+
 mrmime@1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/mrmime/-/mrmime-1.0.1.tgz"
@@ -5054,6 +5059,21 @@ neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
+
+ng-image-slider@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/ng-image-slider/-/ng-image-slider-7.0.0.tgz"
+  integrity sha512-1NxZFYQKv16CwQ6Hw4Nyu9JgguY0EEfI3vnbB6ZEXctcJkn6MCbYVI4PR3SNY7izqsAgUY93F5LWX3r+CeV5Pg==
+  dependencies:
+    tslib "^2.3.0"
+
+ngx-awesome-uploader@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.npmjs.org/ngx-awesome-uploader/-/ngx-awesome-uploader-16.0.0.tgz"
+  integrity sha512-z2UTF+joNnfPJFx4ZxsiMlDHSkR+qSBht263Y0V+Ivx4ao77CV6iqk+psLwhNLHEyYnd+odb4E8bL1oH3xFzcA==
+  dependencies:
+    mrmime "1.0.0"
+    tslib "^2.0.0"
 
 ngx-toastr@^17.0.2:
   version "17.0.2"
@@ -6449,7 +6469,7 @@ tree-kill@1.2.2:
   resolved "https://registry.npmjs.org/tree-kill/-/tree-kill-1.2.2.tgz"
   integrity sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==
 
-tslib@^2.1.0, tslib@^2.3.0:
+tslib@^2.0.0, tslib@^2.1.0, tslib@^2.3.0:
   version "2.6.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.1.tgz"
   integrity sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==

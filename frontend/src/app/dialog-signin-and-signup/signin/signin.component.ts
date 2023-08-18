@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-signin',
@@ -7,12 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class SigninComponent {
 
-  @Input()
-  status!: Boolean
+  @Output() newItemEvent = new EventEmitter<boolean>();
 
-  onRegister() {
-    this.status = false
-    console.log(this.status)
+  addNewItem() {
+    this.newItemEvent.emit(false);
   }
   
 }

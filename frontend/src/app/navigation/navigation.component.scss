@@ -1,11 +1,12 @@
 nav {
-    background-color: #00b33c;
+    // background-color: #9B59B6;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 3rem;
+    padding: 2rem 4rem;
 }
 
 nav div h2 {
+    color: #fff;
     font-size: 22px;
     font-weight: 700;
 }
@@ -20,8 +21,8 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     font-family: 'Segoe UI', sans-serif;
-    color: black;
-    font-size: 18px;
+    color: #fff;
+    font-size: 1.1rem;
     font-weight: 600;
     padding: 8px 0;
     transition-duration: 300ms;

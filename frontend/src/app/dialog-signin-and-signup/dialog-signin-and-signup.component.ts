@@ -7,18 +7,14 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class DialogSigninAndSignupComponent {
 
-  
   status = true;
-  // @Output()
-  // status = new EventEmitter<boolean>();
 
-   @Output()
-  statuss = new EventEmitter<boolean>();
-  // onRegister() {
-  //   this.status = false;
-  // }
+  addItem(NewItem: boolean) {
+    this.status = NewItem
+  }
 
-  // onLogin() {
-  //   this.status = true;
-  // }
+  onInit(): void {
+    
+  }
+
 }

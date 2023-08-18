@@ -1,0 +1,3 @@
+<app-login *ngIf="status" (newItemEvent)="addItem($event)"></app-login>
+<app-register *ngIf="!status" (newItemEvent)="addItem($event)"></app-register>
+

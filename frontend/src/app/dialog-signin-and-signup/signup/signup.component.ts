@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { SignupModel } from 'src/app/models/signup.model';
@@ -16,12 +17,34 @@ export class SignupComponent implements OnInit {
   constructor(
     private _coreService: CoreService,
     private toastr: ToastrService,
+    private http: HttpClient
   ) { }
 
-  @Input()
-  status!: Boolean
+  url = 'assets/image/profile-user.png';
+  onSelectFile(event: any) {
+    if (event.target.files && event.target.files[0]) {
+      var reader = new FileReader();
+      console.log(event.target.files[0]);
+      reader.readAsDataURL(event.target.files[0]); 
+      reader.onload = (e: any) => { 
+      var img = new Image;
+        this.url = e.target.result;
+        img.src = e.target.result;
+        // console.log(img.width);
+        console.log(this.url);
+      }
+    }
+  }
 
-  
+  @Output() newItemEvent = new EventEmitter<boolean>();
+
+  addNewItem() {
+    this.newItemEvent.emit(false);
+  }
+
+  addNewItem2() {
+    this.newItemEvent.emit(true);
+  }
 
   ngOnInit(): void {
     this._genereteForm();

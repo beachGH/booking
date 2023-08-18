@@ -1,8 +1,23 @@
 <body>
-    <div class="center">
+    <div class="left">
+        <div class="showImg">
+            <div class="simple-ss"></div>
+        </div>
+    </div>
+    <div class="right">
         <h1>Login</h1>
         <form>
-            <div class="txt_field">
+            <div class="form-group m-3">
+                <label style="padding-left: 5px;">Email</label>
+                <input type="email" class="form-control" id="email"
+                    placeholder="Enter email">
+            </div>
+            <div class="form-group m-3">
+                <label style="padding-left: 5px;">Password</label>
+                <input type="password" class="form-control" id="password"
+                    placeholder="Enter password">
+            </div>
+            <!-- <div class="txt_field">
                 <input type="email" id="email" required>
                 <span></span>
                 <label>Email</label>
@@ -11,10 +26,11 @@
                 <input type="password" id="password" required>
                 <span></span>
                 <label>Password</label>
-            </div>
-            <input type="submit" value="SIGN IN">
+            </div> -->
+            <!-- <input type="submit" value="LOGIN"> -->
+            <button type="button" class="btn btn-purple btn-lg btn-block">Login</button>
             <div class="signup_link">
-                Not a member? <a (click)="onRegister()">Signup</a>
+                Don't have account? <a (click)="addNewItem()">create a new account</a>
             </div>
         </form>
     </div>
